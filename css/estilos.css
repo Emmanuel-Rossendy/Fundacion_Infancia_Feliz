@@ -357,3 +357,75 @@ h6 {
 .header-top nav a:hover {
   background-color: var(--color-secundario);
 }
+
+.Consulta {
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+  background: var(--color-blanco);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px var(--color-sombra);
+}
+
+.Consulta form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.Consulta .form-row {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.Consulta h2,
+.Consulta textarea,
+.Consulta .btn-submit {
+  grid-column: 1 / -1;
+}
+
+.Consulta textarea {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid var(--color-borde);
+  border-radius: 6px;
+  font-size: 0.95rem;
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+.mensaje-row {
+  grid-column: 1 / -1;
+}
+
+.Consulta label {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.Consulta input,
+.Consulta select {
+  padding: 8px 10px;
+  border: 1px solid var(--color-borde);
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.Consulta .btn-submit {
+  grid-column: 1 / -1;
+  padding: 10px 16px;
+  background: var(--color-primario);
+  color: var(--color-blanco);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  display: block;
+  margin: 0 auto;
+}
+
+.boton-row {
+  grid-column: 1 / -1;
+  align-items: center;
+}
