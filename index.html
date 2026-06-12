@@ -9,21 +9,27 @@
 
   <body>
     <header>
-      <figure class="logo">
-        <img src="/img/logo_FIF.png" alt="Logo Fundación Infancia Feliz" />
-      </figure>
-      <h1>Fundación Infancia Feliz</h1>
+      <div class="header-top">
+        <figure class="logo">
+          <img src="/img/logo_FIF.png" alt="Logo Fundación Infancia Feliz" />
+        </figure>
 
-      <h2>Juguetes que construyen una infancia</h2>
+        <nav>
+          <ul>
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="/pages/nosotros.html">Nosotros</a></li>
+            <li><a href="/pages/contacto.html">Contacto</a></li>
+            <li><a href="/pages/programas.html">Programas</a></li>
+          </ul>
+        </nav>
 
-      <nav>
-        <ul>
-          <li><a href="./index.html"> Inicio </a></li>
-          <li><a href="/pages/nosotros.html"> Nosotros </a></li>
-          <li><a href="/pages/contacto.html"> Contacto </a></li>
-          <li><a href="/pages/programas.html"> Programas </a></li>
-        </ul>
-      </nav>
+        <a class="btn-sumate" href="#inscripcion">SUMATE</a>
+      </div>
+
+      <div class="header-copy">
+        <h1>Fundación Infancia Feliz</h1>
+        <h2>Juguetes que construyen una infancia</h2>
+      </div>
     </header>
 
     <main>
@@ -45,12 +51,85 @@
         </p>
       </section>
 
-      <section>
-        <h2>Nuestro compromiso</h2>
-        <p>
-          Asegurar que cada juguete entregado esté en perfectas condiciones, sea
-          seguro y llegue a las manos adecuadas en el momento justo
-        </p>
+      <section id="inscripcion" class="inscripcion">
+        <h2>Inscribite para colaborar</h2>
+        <form id="form-inscripcion" action="#success" method="get">
+          <div class="form-row">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required />
+          </div>
+
+          <div class="form-row">
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" name="apellido" required />
+          </div>
+
+          <div class="form-row">
+            <label for="dni">DNI</label>
+            <input type="number" id="dni" name="dni" required />
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="form-row">
+            <label for="celular">Celular</label>
+            <input type="tel" id="celular" name="celular" required />
+          </div>
+
+          <div class="form-row">
+            <label for="nacimiento">Fecha de nacimiento</label>
+            <input type="date" id="nacimiento" name="nacimiento" required />
+          </div>
+
+          <div class="form-row">
+            <label for="provincia">Provincia</label>
+            <select id="provincia" name="provincia" required>
+              <option value="">Seleccioná tu provincia</option>
+              <option>Buenos Aires</option>
+              <option>Catamarca</option>
+              <option>Chaco</option>
+              <option>Chubut</option>
+              <option>Córdoba</option>
+              <option>Corrientes</option>
+              <option>Entre Ríos</option>
+              <option>Formosa</option>
+              <option>Jujuy</option>
+              <option>La Pampa</option>
+              <option>La Rioja</option>
+              <option>Mendoza</option>
+              <option>Misiones</option>
+              <option>Neuquén</option>
+              <option>Río Negro</option>
+              <option>Salta</option>
+              <option>San Juan</option>
+              <option>San Luis</option>
+              <option>Santa Cruz</option>
+              <option>Santa Fe</option>
+              <option>Santiago del Estero</option>
+              <option>Tierra del Fuego</option>
+              <option>Tucumán</option>
+              <option>Ciudad Autónoma de Buenos Aires</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="colaboracion">Tipo de colaboración</label>
+            <select id="colaboracion" name="colaboracion" required>
+              <option value="">Seleccioná una opción</option>
+              <option>Transferencia</option>
+              <option>Dona tus juguetes</option>
+              <option>Quiero ser parte</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <button type="submit" class="btn-submit">Enviar inscripción</button>
+          </div>
+        </form>
+        <div id="success">¡Tu inscripción se completó correctamente! Gracias por sumarte.</div>
       </section>
 
       <section class="patrocinadores">
@@ -80,12 +159,13 @@
           <img src="https://picsum.photos/200/300" alt="Logo Empresa 6" />
         </figure>
       </section>
+    </main>
 
-      <footer>
-        <div class="footer-left">
-          <p>&copy; 2026 Fundación Infancia Feliz</p>
-          <p>Av. Ejemplo 123 — Ciudad — Tel: (000) 000-000</p>
-        </div>
+    <footer>
+      <div class="footer-left">
+        <p>&copy; 2026 Fundación Infancia Feliz</p>
+        <p>Av. Ejemplo 123 — Ciudad — Tel: (000) 000-000</p>
+      </div>
 
         <nav class="footer-nav">
           <ul>
