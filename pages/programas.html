@@ -4,35 +4,64 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fundación Infancia Feliz</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../css/estilos.css" />
   </head>
 
   <body>
-    <header>
-      <div class="header-top">
-        <figure class="logo">
-          <img src="/img/logo_FIF.png" alt="Logo Fundación Infancia Feliz" />
-        </figure>
-
-        <nav>
-          <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="/pages/nosotros.html">Nosotros</a></li>
-            <li><a href="/pages/contacto.html">Contacto</a></li>
-            <li><a href="/pages/programas.html">Programas</a></li>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+          <img
+            src="/img/logo_FIF.png"
+            alt="Logo Fundación Infancia Feliz"
+            style="height: 40px"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/programas.html">Programas</a>
+            </li>
           </ul>
-        </nav>
-
-        <a class="btn-sumate" href="../index.html#inscripcion">SUMATE</a>
+          <a class="btn btn-primary ms-2" href="../index.html#inscripcion"
+            >SUMATE</a
+          >
+        </div>
       </div>
+    </nav>
 
+    <header>
       <div class="header-copy">
         <h1>Nuestros programas</h1>
         <h2>Juguetes que construyen una infancia</h2>
       </div>
     </header>
 
-    <main>
+    <main class="container">
       <section id="nuestros_programas">
         <section>
           <h2>Programas activos</h2>
@@ -61,34 +90,47 @@
         </section>
       </section>
     </main>
-    <footer>
-      <div class="footer-left">
-        <p>&copy; 2026 Fundación Infancia Feliz</p>
-        <p>Av. Ejemplo 123 — Ciudad — Tel: (000) 000-000</p>
-      </div>
-    </main>
 
-    <footer>
-      <div class="footer-left">
-        <p>&copy; 2026 Fundación Infancia Feliz</p>
-        <p>Av. Ejemplo 123 — Ciudad — Tel: (000) 000-000</p>
-      </div>
-
-      <nav class="footer-nav">
-        <ul>
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="./nosotros.html">Nosotros</a></li>
-          <li><a href="./contacto.html">Contacto</a></li>
-          <li><a href="./programas.html">Programas</a></li>
-        </ul>
-      </nav>
-
-      <div class="footer-cta">
-        <p>
-          Si sos empresa y querés colaborar,
-          <a href="./contacto.html">enterate cómo</a>.
-        </p>
+    <footer class="bg-light mt-5 py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-3 mb-md-0">
+            <p>&copy; 2026 Fundación Infancia Feliz</p>
+            <p>Av. Ejemplo 123 — Ciudad — Tel: (000) 000-000</p>
+          </div>
+          <div class="col-md-4 mb-3 mb-md-0">
+            <ul class="list-unstyled">
+              <li>
+                <a href="../index.html" class="text-decoration-none">Inicio</a>
+              </li>
+              <li>
+                <a href="./nosotros.html" class="text-decoration-none"
+                  >Nosotros</a
+                >
+              </li>
+              <li>
+                <a href="./contacto.html" class="text-decoration-none"
+                  >Contacto</a
+                >
+              </li>
+              <li>
+                <a href="./programas.html" class="text-decoration-none"
+                  >Programas</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <p>
+              Si sos empresa y querés colaborar,
+              <a href="./contacto.html" class="text-decoration-none"
+                >enterate cómo</a
+              >.
+            </p>
+          </div>
+        </div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

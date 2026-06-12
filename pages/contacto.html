@@ -4,131 +4,266 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fundación Infancia Feliz</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../css/estilos.css" />
   </head>
 
   <body>
-    <header>
-      <div class="header-top">
-        <figure class="logo">
-          <img src="/img/logo_FIF.png" alt="Logo Fundación Infancia Feliz" />
-        </figure>
-
-        <nav>
-          <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="/pages/nosotros.html">Nosotros</a></li>
-            <li><a href="/pages/contacto.html">Contacto</a></li>
-            <li><a href="/pages/programas.html">Programas</a></li>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+          <img
+            src="/img/logo_FIF.png"
+            alt="Logo Fundación Infancia Feliz"
+            style="height: 40px"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/programas.html">Programas</a>
+            </li>
           </ul>
-        </nav>
-
-        <a class="btn-sumate" href="../index.html#inscripcion">SUMATE</a>
+          <a class="btn btn-primary ms-2" href="../index.html#inscripcion"
+            >SUMATE</a
+          >
+        </div>
       </div>
+    </nav>
 
+    <header>
       <div class="header-copy">
         <h1>Contacto</h1>
         <h2>Juguetes que construyen una infancia</h2>
       </div>
     </header>
 
-    <main>
+    <main class="container">
       <section id="nuestras_redes">
-        <h2>Encontranos en nuestras redes!</h2>
-
-        <ul>
-          <li><a href="">info@fundacionif@org.ar</a></li>
-          <li>
-            <a href="https://www.instagram.com/" target="_blank"
-              >Instagram: Fundacion Infancia Feliz</a
-            >
-          </li>
-          <li>
-            <a href="https://www.facebook.com/" target="_blank"
-              >Facebook: Fundacion Infancia Feliz</a
-            >
-          </li>
-        </ul>
+        <div class="container">
+          <h2>Encontranos en nuestras redes!</h2>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <a
+                href="mailto:info@fundacionif@org.ar"
+                class="text-decoration-none"
+                >info@fundacionif@org.ar</a
+              >
+            </li>
+            <li class="list-group-item">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="text-decoration-none"
+                >Instagram: Fundacion Infancia Feliz</a
+              >
+            </li>
+            <li class="list-group-item">
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                class="text-decoration-none"
+                >Facebook: Fundacion Infancia Feliz</a
+              >
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section>
-        <h2>Podes encontrarnos en los siguientes municipios!</h2>
-
-        <ul>
-          <li>La Matanza</li>
-          <li>Morón</li>
-          <li>Tres de Febrero</li>
-          <li>San Martín</li>
-          <li>Avellaneda</li>
-          <li>Lanús</li>
-          <li>Lomas de Zamora</li>
-          <li>Quilmes</li>
-          <li>Vicente López</li>
-          <li>San Isidro</li>
-        </ul>
+        <div class="container">
+          <h2>Podes encontrarnos en los siguientes municipios!</h2>
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-5 g-3">
+            <div class="col">
+              <div class="p-3 bg-light rounded">
+                <p class="mb-0">La Matanza</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="p-3 bg-light rounded">
+                <p class="mb-0">Morón</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="p-3 bg-light rounded">
+                <p class="mb-0">Tres de Febrero</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="p-3 bg-light rounded">
+                <p class="mb-0">San Martín</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="p-3 bg-light rounded">
+                <p class="mb-0">Avellaneda</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="p-3 bg-light rounded">
+                <p class="mb-0">Lanús</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="p-3 bg-light rounded">
+                <p class="mb-0">Lomas de Zamora</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="p-3 bg-light rounded">
+                <p class="mb-0">Quilmes</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="p-3 bg-light rounded">
+                <p class="mb-0">Vicente López</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="p-3 bg-light rounded">
+                <p class="mb-0">San Isidro</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section id="Consulta" class="Consulta">
-        <form id="form-consulta" action="#success" method="get">
-          <h2>Deje su consulta</h2>
-            <div class="form-row">
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre" required />
+        <div class="container">
+          <form
+            id="form-consulta"
+            action="#success"
+            method="get"
+            class="row g-3"
+          >
+            <div class="col-12">
+              <h2>Deje su consulta</h2>
+            </div>
+            <div class="col-md-6">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                class="form-control"
+                required
+              />
             </div>
 
-            <div class="form-row">
-                <label for="apellido">Apellido</label>
-                <input type="text" id="apellido" name="apellido" required />
+            <div class="col-md-6">
+              <label for="apellido" class="form-label">Apellido</label>
+              <input
+                type="text"
+                id="apellido"
+                name="apellido"
+                class="form-control"
+                required
+              />
             </div>
 
-            <div class="form-row">
-               <label for="email">Email</label>
-               <input type="email" id="email" name="email" required placeholder="ejemplo@gmail.com" />
+            <div class="col-md-6">
+              <label for="email" class="form-label">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-control"
+                required
+                placeholder="ejemplo@gmail.com"
+              />
             </div>
 
-            <div class="form-row">
-                <label for="celular">Celular</label>
-                <input type="tel" id="celular" name="celular" required placeholder="11-2222-3333" />
+            <div class="col-md-6">
+              <label for="celular" class="form-label">Celular</label>
+              <input
+                type="tel"
+                id="celular"
+                name="celular"
+                class="form-control"
+                required
+                placeholder="11-2222-3333"
+              />
             </div>
 
-            <div class="form-row mensaje-row">
-                <label for="mensaje">Déjenos su mensaje</label>
-                <textarea id="mensaje" cols="30" rows="10"></textarea>
+            <div class="col-12">
+              <label for="mensaje" class="form-label">Déjenos su mensaje</label>
+              <textarea id="mensaje" class="form-control" rows="5"></textarea>
             </div>
 
-            <div class="form-row boton-row">
-                 <button type="submit" class="btn-submit">
-                     Enviar inscripción
-                 </button>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Enviar</button>
             </div>
-        </form>
-            <div id="success">
-                ¡Tu mensaje se envió correctamente! En breve nos contactaremos.
-             </div>
+          </form>
+          <div id="success" class="alert alert-success mt-3" role="alert">
+            ¡Tu mensaje se envió correctamente! En breve nos contactaremos.
+          </div>
+        </div>
       </section>
     </main>
 
-    <footer>
-      <div class="footer-left">
-        <p>&copy; 2026 Fundación Infancia Feliz</p>
-        <p>Av. Ejemplo 123 — Ciudad — Tel: (000) 000-000</p>
-      </div>
-
-      <nav class="footer-nav">
-        <ul>
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="./nosotros.html">Nosotros</a></li>
-          <li><a href="./contacto.html">Contacto</a></li>
-          <li><a href="./programas.html">Programas</a></li>
-        </ul>
-      </nav>
-
-      <div class="footer-cta">
-        <p>
-          Si sos empresa y querés colaborar,
-          <a href="./contacto.html">enterate cómo</a>.
-        </p>
+    <footer class="bg-light mt-5 py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-3 mb-md-0">
+            <p>&copy; 2026 Fundación Infancia Feliz</p>
+            <p>Av. Ejemplo 123 — Ciudad — Tel: (000) 000-000</p>
+          </div>
+          <div class="col-md-4 mb-3 mb-md-0">
+            <ul class="list-unstyled">
+              <li>
+                <a href="../index.html" class="text-decoration-none">Inicio</a>
+              </li>
+              <li>
+                <a href="./nosotros.html" class="text-decoration-none"
+                  >Nosotros</a
+                >
+              </li>
+              <li>
+                <a href="./contacto.html" class="text-decoration-none"
+                  >Contacto</a
+                >
+              </li>
+              <li>
+                <a href="./programas.html" class="text-decoration-none"
+                  >Programas</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <p>
+              Si sos empresa y querés colaborar,
+              <a href="./contacto.html" class="text-decoration-none"
+                >enterate cómo</a
+              >.
+            </p>
+          </div>
+        </div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
