@@ -107,6 +107,28 @@ footer p {
   margin: 0;
 }
 
+.footer-links ul {
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer-links li {
+  margin-bottom: 0;
+}
+
+@media (max-width: 576px) {
+  .footer-links ul {
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar .navbar-nav {
+    justify-content: center;
+  }
+}
+
 .inscripcion,
 .Consulta {
   width: 100%;
