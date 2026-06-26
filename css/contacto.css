@@ -1,15 +1,15 @@
 :root {
-  --naranja: #F97316;
-  --naranja-claro: #FFF7ED;
-  --naranja-borde: #FED7AA;
-  --verde-claro: #F0FDF4;
-  --verde-borde: #BBF7D0;
-  --verde-texto: #16A34A;
-  --texto: #1C1917;
-  --texto-suave: #78716C;
-  --fondo: #FFFBF5;
-  --blanco: #FFFFFF;
-  --borde: #F0EBE3;
+  --naranja: #f97316;
+  --naranja-claro: #fff7ed;
+  --naranja-borde: #fed7aa;
+  --verde-claro: #f0fdf4;
+  --verde-borde: #bbf7d0;
+  --verde-texto: #16a34a;
+  --texto: #1c1917;
+  --texto-suave: #78716c;
+  --fondo: #fffbf5;
+  --blanco: #ffffff;
+  --borde: #f0ebe3;
 }
 
 /* ── BASE ── */
@@ -123,7 +123,7 @@ section:has(#form-consulta) {
 
 .form-control,
 .form-select {
-  border-color: #E7E0D8;
+  border-color: #e7e0d8;
   border-radius: 8px;
   background-color: var(--blanco);
   color: var(--texto);
@@ -186,11 +186,11 @@ section:has(#faqAccordion) {
 /* ── FOOTER ── */
 footer {
   background-color: var(--texto) !important;
-  color: #D6CFC8;
+  color: #d6cfc8;
 }
 
 footer a {
-  color: #D6CFC8;
+  color: #d6cfc8;
   text-decoration: none;
 }
 
@@ -199,13 +199,13 @@ footer a:hover {
 }
 
 footer hr {
-  border-color: #2C2826;
+  border-color: #2c2826;
   opacity: 1;
 }
 
 .footer-social a {
   font-size: 1.2rem;
-  color: #D6CFC8;
+  color: #d6cfc8;
 }
 
 .footer-social a:hover {
