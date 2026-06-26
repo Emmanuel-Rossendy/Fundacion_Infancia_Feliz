@@ -59,7 +59,6 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 40px;
-  padding: 40px 20px;
 }
 
 .patrocinadores {
@@ -76,7 +75,6 @@ main {
 
 .patrocinadores img {
   width: 100%;
-  max-width: 180px;
   height: auto;
   display: block;
 }
@@ -85,49 +83,32 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 6px;
   background: transparent;
 }
 
 .patrocinadores .logo-img {
-  max-width: 160px;
+  max-width: 200px;
   height: auto;
   opacity: 0.8;
   transition:
     opacity 200ms ease,
-    filter 200ms ease;
+    filter 200ms ease,
+    transform 200ms ease;
 }
 
 .patrocinadores .logo-wrap:hover .logo-img {
-  opacity: 1;
+  opacity: 100;
   filter: brightness(1.03) contrast(1.06) saturate(1.02);
+  filter: drop-shadow(0 12px 30px rgba(0,0,0,0.25));
+  transform: translateY(-3px);
+  
 }
 
 footer p {
   margin: 0;
 }
 
-.footer-links ul {
-  justify-content: center;
-  gap: 1rem;
-}
 
-.footer-links li {
-  margin-bottom: 0;
-}
-
-@media (max-width: 576px) {
-  .footer-links ul {
-    flex-direction: column;
-    gap: 0.6rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .navbar .navbar-nav {
-    justify-content: center;
-  }
-}
 
 .inscripcion,
 .Consulta {
@@ -174,3 +155,4 @@ h6 {
   margin-top: 0;
   color: var(--color-texto);
 }
+
