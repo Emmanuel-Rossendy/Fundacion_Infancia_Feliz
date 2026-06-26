@@ -21,6 +21,30 @@
   padding: 0;
 }
 
+/*MODO OSCURO*/
+body.modo-oscuro {
+  --color-primario: #2563eb;
+  --color-secundario: #16a34a;
+  --color-texto: #f9f9fa;
+  --color-fondo: #f8fafc;
+  --color-contenido: #17442e;
+  --color-header-fondo: #2e5f48;
+  --color-footer-fondo: #2563eb;
+  --color-success: #236516;
+  --color-blanco: #ffffff;
+  --color-borde: #e2e8f0;
+  --color-sombra: rgba(0, 0, 0, 0.05);
+  --fuente-principal: "Trebuchet MS", sans-serif;
+}
+
+body.modo-oscuro #btn-modo {
+  background: #222;
+}
+
+body.modo-oscuro #btn-modo:hover {
+  background: #222;
+}
+
 html {
   width: 100%;
   height: 100%;
@@ -119,6 +143,7 @@ main {
 
 footer p {
   margin: 0;
+  color: black;
 }
 
 #nuestros_programas {
@@ -169,6 +194,11 @@ footer p {
   background: var(--color-blanco);
   border-radius: 10px;
   box-shadow: 0 2px 8px var(--color-sombra);
+  color: black;
+}
+
+.inscripcion h2{
+  color: black;
 }
 
 #success {
@@ -204,4 +234,13 @@ h5,
 h6 {
   margin-top: 0;
   color: var(--color-texto);
+}
+
+
+#form-consulta h2{
+  color: black;
+}
+
+#donde-estamos p{
+  color: black;
 }
