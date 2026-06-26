@@ -54,11 +54,11 @@
               <a class="nav-link" href="/pages/programas.html">Programas</a>
             </li>
           </ul>
-          
+
           <button id="btn-modo" class="btn btn-outline-secondary btn-sm">
             <i class="bi bi-moon-stars"></i>
           </button>
-         
+
           <a class="btn btn-primary ms-2" href="#inscripcion">SUMATE</a>
         </div>
       </div>
@@ -68,7 +68,6 @@
       <div class="header-copy">
         <h1>Fundación Infancia Feliz</h1>
         <h2>Juguetes que construyen una infancia</h2>
-        
       </div>
     </header>
 
@@ -239,7 +238,25 @@
               </select>
             </div>
 
-            <div class="col-12">
+            <div class="col-md-12">
+              <label for="programas-activos" class="form-label"
+                >Programas activos</label
+              >
+              <select
+                id="programas-activos"
+                name="programas-activos"
+                class="form-select"
+                required
+              >
+                <option value="">Seleccioná un programa</option>
+                <option>Dia del niño para todos</option>
+                <option>Papa noel nos visita</option>
+                <option>Cumpleaños solidario</option>
+                <option>Llegaron los Reyes Magos</option>
+              </select>
+            </div>
+
+            <div class="col-12 justify-content-center d-flex">
               <button type="submit" class="btn btn-primary">
                 Enviar inscripción
               </button>
