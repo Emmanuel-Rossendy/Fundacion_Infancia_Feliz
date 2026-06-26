@@ -95,7 +95,7 @@ main {
   gap: 40px;
 }
 
-.presentacion h2 {
+.presentacion h2, #nuestros_programas h2 {
   font-size: 3rem;
   background-color: #197c4e;
   color: white;
