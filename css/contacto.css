@@ -1,0 +1,213 @@
+:root {
+  --naranja: #F97316;
+  --naranja-claro: #FFF7ED;
+  --naranja-borde: #FED7AA;
+  --verde-claro: #F0FDF4;
+  --verde-borde: #BBF7D0;
+  --verde-texto: #16A34A;
+  --texto: #1C1917;
+  --texto-suave: #78716C;
+  --fondo: #FFFBF5;
+  --blanco: #FFFFFF;
+  --borde: #F0EBE3;
+}
+
+/* ── BASE ── */
+body {
+  background-color: var(--fondo);
+  color: var(--texto);
+}
+
+/* ── NAVBAR ── */
+.navbar {
+  background-color: var(--blanco) !important;
+}
+
+.btn-primary {
+  background-color: var(--naranja);
+  border-color: var(--naranja);
+  font-weight: 600;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #ea6b0a;
+  border-color: #ea6b0a;
+}
+
+/* ── HEADER ── */
+header {
+  background-color: var(--naranja-claro);
+  border-bottom: 1px solid var(--naranja-borde);
+}
+
+header h1 {
+  color: var(--texto);
+}
+
+/* ── SECCIONES: espaciado general ── */
+section {
+  padding: 3.5rem 0;
+}
+
+section h2 {
+  color: var(--texto);
+}
+
+/* ── REDES SOCIALES ── */
+#nuestras_redes {
+  background-color: var(--blanco);
+  border-bottom: 1px solid var(--borde);
+}
+
+.red-card {
+  background-color: var(--blanco);
+  border: 1px solid var(--borde);
+  border-radius: 12px;
+  padding: 1.25rem;
+  text-decoration: none;
+  color: var(--texto);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.red-card:hover {
+  border-color: var(--naranja-borde);
+  background-color: var(--naranja-claro);
+  color: var(--texto);
+}
+
+/* ── DÓNDE ESTAMOS ── */
+#donde-estamos {
+  background-color: var(--fondo);
+}
+
+.badge-municipio {
+  background-color: var(--blanco);
+  border: 1px solid var(--borde);
+  border-radius: 100px;
+  padding: 0.4rem 1rem;
+  font-size: 0.88rem;
+  color: var(--texto);
+}
+
+/* ── SECCIÓN FORMULARIO ── */
+section:has(#form-consulta) {
+  background-color: var(--blanco);
+  border-top: 1px solid var(--borde);
+}
+
+.icono-contacto {
+  color: var(--naranja);
+}
+
+.alerta-empresa {
+  background-color: var(--naranja-claro);
+  border: 1px solid var(--naranja-borde);
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  font-size: 0.9rem;
+  color: var(--texto-suave);
+}
+
+.alerta-empresa strong {
+  color: var(--naranja);
+}
+
+.alerta-empresa a {
+  color: var(--naranja);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.form-control,
+.form-select {
+  border-color: #E7E0D8;
+  border-radius: 8px;
+  background-color: var(--blanco);
+  color: var(--texto);
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--naranja);
+  box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.12);
+}
+
+#success {
+  background-color: var(--verde-claro);
+  border: 1px solid var(--verde-borde);
+  color: var(--verde-texto);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  font-weight: 600;
+}
+
+/* ── FAQ / ACCORDION ── */
+section:has(#faqAccordion) {
+  background-color: var(--fondo);
+  border-top: 1px solid var(--borde);
+}
+
+.accordion-item {
+  border: 1px solid var(--borde);
+  border-radius: 10px !important;
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+  background-color: var(--blanco);
+}
+
+.accordion-button {
+  background-color: var(--blanco);
+  color: var(--texto);
+  font-weight: 600;
+  border-radius: 10px !important;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--naranja-claro);
+  color: var(--naranja);
+  box-shadow: none;
+}
+
+.accordion-button::after {
+  filter: none;
+}
+
+.accordion-button:not(.collapsed)::after {
+  filter: invert(50%) sepia(80%) saturate(800%) hue-rotate(10deg);
+}
+
+.accordion-button:focus {
+  box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.12);
+}
+
+/* ── FOOTER ── */
+footer {
+  background-color: var(--texto) !important;
+  color: #D6CFC8;
+}
+
+footer a {
+  color: #D6CFC8;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--naranja);
+}
+
+footer hr {
+  border-color: #2C2826;
+  opacity: 1;
+}
+
+.footer-social a {
+  font-size: 1.2rem;
+  color: #D6CFC8;
+}
+
+.footer-social a:hover {
+  color: var(--naranja);
+}
