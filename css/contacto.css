@@ -35,15 +35,7 @@ body {
   border-color: #ea6b0a;
 }
 
-/* ── HEADER ── */
-header {
-  background-color: var(--naranja-claro);
-  border-bottom: 1px solid var(--naranja-borde);
-}
 
-header h1 {
-  color: var(--texto);
-}
 
 /* ── SECCIONES: espaciado general ── */
 section {
